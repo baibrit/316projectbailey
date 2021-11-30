@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--
+      This is the page head - it contains info the browser uses to display the page
+      You won't see what's in the head in the page
+      Scroll down to the body element for the page content
+    -->
+<meta name="description" content="Vaccination rates in Kansas are growing slowly, where does your county lie?"> <!-- The websum -->
+
+    <meta name="twitter:title" content="Riley County has vaccination rate of 583, 34th highest rate in Kansas" /> <!-- The webhed -->
+    <meta name="twitter:description" content="As of November 10, Riley County has the 34th highest vaccination rate in Kansas at 586 vaccinated people per 1,000 people." /> <!-- The websum -->
+    <meta name="twitter:image:src" content="https://cdn.glitch.me/dfd51fd9-60f8-4fbb-a55b-ea1f73cec376%2Fthumbnails%2Ftwitter.jpeg?1638315558581"/> <!-- the img URL -->
+
+    <meta property="og:image" content="https://cdn.glitch.me/dfd51fd9-60f8-4fbb-a55b-ea1f73cec376%2Fthumbnails%2Ftwitter.jpeg?1638315558581" /> <!-- The img URL -->
+
+    <meta property="og:type" content="article" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="baibritton" />
+    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+
+    <!-- 
+      This is an HTML comment
+      You can write text in a comment and the content won't be visible in the page
+    -->
+
+    <title>Vaccination Rates in Kansas</title>
+
+    <!-- Meta tags for SEO and social sharing -->
+    <link rel="canonical" href="https://glitch-hello-website.glitch.me/" />
+    <meta
+      name="description"
+      content="A simple website, built with Glitch. Remix it to get your own."
+    />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:title" content="Hello World!" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://glitch-hello-website.glitch.me/" />
+    <meta
+      property="og:description"
+      content="A simple website, built with Glitch. Remix it to get your own."
+    />
+    <meta
+      property="og:image"
+      content="https://cdn.glitch.com/605e2a51-d45f-4d87-a285-9410ad350515%2Fhello-website-social.png?v=1616712748147"
+    />
+    <meta name="twitter:card" content="summary" />
+
+       <link rel="stylesheet" href="/style.css" />
+
+    <!-- Import the webpage's javascript file -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.datatables.net/v/dt/jq-3.6.0/dt-1.11.3/datatables.min.css"
+    />
+
+    <script
+      type="text/javascript"
+      src="https://cdn.datatables.net/v/dt/jq-3.6.0/dt-1.11.3/datatables.min.js"
+    ></script>
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+ 
+    <h1>
+    Riley County has vaccination rate of 583, 34th highest rate in Kansas
+    </h1> 
+    <h4>
+       By Bailey Britton, Hallie Everett, Lexi Garcia
+    </h4>
+     <p>
+      November 17, 2021 | Source:
+      <a href="https://www.kansasvaccine.gov/158/Data" target="_blank">KDHE</a>
+    <p>
+      As of November 10, Riley County has the 34th highest vaccination rate in Kansas at 586 vaccinated per 1,000 people. This rate is calculated for those age 12 and older with at least one dose of the vaccine. 
+    </p>
+
+    <div id="container" style="height: 520px; width: 800px; margin: 0 auto; text-align:center; line-height: 520px">
+    Downloading map...
+</div>
+    
+<script src="https://code.highcharts.com/maps/highmaps.js"></script>
+<script src="https://code.highcharts.com/maps/modules/data.js"></script>
+<script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/maps/modules/offline-exporting.js"></script>
+<script src="https://code.highcharts.com/mapdata/countries/us/us-ks-all.js"></script>
+<h3>
+  What does this mean?
+    </h3>
+ <p>
+   In order to get multiple perspectives over the vaccine, we will be interviewing experts and students. From the experts, we will gather information from them about their views on the vaccine, why they think people should get it and changes they’ve seen as vaccination rates increase or decrease. For our data, we will include different vaccination rates for different counties in Kansas and offer comparisons between them.
+    </p> 
+      <table id="example" class="display" width="100%">
+              <thead>
+        <tr>
+          <th>County</th>
+          <th>Rate per 1,000</th>
+        </tr>
+      </thead>
+    </table>
+    <p>
+      Source: <a href="https://www.kansasvaccine.gov/158/Data" target="_blank">KDHE</a>
+    </p>
+<h3>
+   Conflicting viewpoints 
+    </h3>
+   <p>
+      For the student perspective, we will be interviewing a student advocating for the vaccine and a student who is against vaccine mandates. This allows us to include both opinions of the vaccine and keep the story well-rounded. To offer a connection to the anti-vaxx angle of the story, we will provide the vaccination rates for the counties with the lowest ones. 
+    </p>
+
+    
+    <iframe src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=14-kux7Se7eVwArgEa09_N90PeEMt5CKbtNAlJury02w&font=Default&lang=en&initial_zoom=2&height=650' width='100%' height='650' webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder='0'></iframe> 
+   <p>
+      
+    The data used for analyses and graphics presented are from the Kansas Department of Health & Environment. The data was collected by the Kansas Immunization Information System from Kansas Healthcare providers. The data is updated every Monday, Wednesday, and Friday and the data used is from November 10, 2021. <a href="https://www.kansasvaccine.gov/158/Data" target="_blank">Here is a link to our spreadsheet.</a>
+    </p>
+<div id="social">
+      <ul>
+        <li>
+          <a href="https://twitter.com/intent/tweet?source=https://firstdraft-bailey-hallie-exi.glitch.me/&text=:%20https://firstdraft-bailey-hallie-exi.glitch.me/" target="_blank" id="twitter" onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent(document.title) + ':%20' + encodeURIComponent(document.URL)); return false;"><i class="fab fa-twitter"></i></a>
+        </li>
+        <li>
+          <a href="https://facebook.com/sharer/sharer.php?u=https://firstdraft-bailey-hallie-exi.glitch.me/&quote=" target="_blank" title="Share on Facebook" id="facebook" onclick="window.open('https://facebook.com/sharer/sharer.php?u='+ encodeURIComponent(document.URL) + '&quote=' + encodeURIComponent(document.URL)); return false;"><i class="fab fa-facebook"></i></a>
+        </li>
+        <li>
+          <a href="mailto:baibrit@ksu.edu" target="_blank" id="email"><i class="fas fa-paper-plane"></i></a>
+        </li>
+      </ul>
+    </div>
+    
+  </body>
+</html>
