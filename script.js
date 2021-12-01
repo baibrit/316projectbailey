@@ -438,7 +438,7 @@ $(document).ready(function() {
   });
 });
 
-Highcharts.getJSON("/vaccine.json", function(data) {
+Highcharts.getJSON("vaccine.json", function(data) {
   /**
    * Data parsed from http://www.bls.gov/lau/#tables
    *
