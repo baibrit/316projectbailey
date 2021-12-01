@@ -460,7 +460,7 @@ Highcharts.getJSON("vaccine.json", function(data) {
       "mapline"
     ),
     // Filter out the state borders and separator lines, we want these
-    // in separate series
+ 
     borderLines = lines.filter(
       l => l.properties["hc-group"] === "__border_lines__"
     ),
