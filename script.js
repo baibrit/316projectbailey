@@ -439,17 +439,7 @@ $(document).ready(function() {
 });
 
 Highcharts.getJSON("vaccine.json", function(data) {
-  /**
-   * Data parsed from http://www.bls.gov/lau/#tables
-   *
-   * 1. Go to http://www.bls.gov/lau/laucntycur14.txt (or similar, updated
-   *    datasets)
-   * 2. In the Chrome Developer tools console, run this code:
-   *    copy(JSON.stringify(document.body.innerHTML.split('\n').filter(function (s) { return s.indexOf('<PUT DATE HERE IN FORMAT e.g. Feb-14>') !== -1; }).map(function (row) { row = row.split('|'); return { code: 'us-' + row[3].trim().slice(-2).toLowerCase() + '-' + row[2].trim(), name: row[3].trim(), value: parseFloat(row[8]) }; })))
-   * 3. The data is now on your clipboard, paste it below
-   * 4. Verify that the length of the data is reasonable, about 3300
-   *    counties.
-   */
+
 
   var countiesMap = Highcharts.geojson(
       Highcharts.maps["countries/us/us-ks-all"]
